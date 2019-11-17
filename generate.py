@@ -14,7 +14,7 @@ def gen_topics():
     data = [
         {
             'id': '3643', 'title': 'Mars Curiosity',
-            'imageUrl': 'images-assets.nasa.gov/image/PIA14760/PIA14760~orig.jpg',
+            'imageUrl': 'https://images-assets.nasa.gov/image/PIA14760/PIA14760~orig.jpg',
         },
         {
             'id': '3456', 'title': 'Space Station',
