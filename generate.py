@@ -44,7 +44,7 @@ def gen_today():
         image_url = entry['links'][1]['href'].replace('http://', 'https://')
         thumbnail_url = image_url.replace(
             'www.nasa.gov/sites/default/files/thumbnails/image/',
-            'www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/',
+            'www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/thumbnails/image/',
         )
         data.append({
             'title': title,
