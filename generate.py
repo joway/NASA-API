@@ -42,12 +42,17 @@ def gen_today():
         date = entry['published']
         link = entry['link']
         image_url = entry['links'][1]['href'].replace('http://', 'https://')
+        thumbnail_url = image_url.replace(
+            'www.nasa.gov/sites/default/files/thumbnails/image/',
+            'www.nasa.gov/sites/default/files/styles/1x1_cardfeed/public/',
+        )
         data.append({
             'title': title,
             'description': description,
             'date': date,
             'link': link,
             'imageUrl': image_url,
+            'thumbnailUrl': thumbnail_url,
         })
     write_file(f'{BASE_DIR}/today.json', json.dumps(data))
 
