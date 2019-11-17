@@ -41,7 +41,7 @@ def gen_today():
         description = entry['summary']
         date = entry['published']
         link = entry['link']
-        image_url = entry['links'][1]['href']
+        image_url = entry['links'][1]['href'].replace('http://', 'https://')
         data.append({
             'title': title,
             'description': description,
